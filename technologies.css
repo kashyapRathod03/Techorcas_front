@@ -1,0 +1,97 @@
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00f2ff;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.tech-card {
+  background: #121212;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+}
+
+.tech-header {
+  display: flex;
+  flex-direction: column;     /* Stack logo and title vertically */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tech-logo {
+  width: 80px;                /* Increased size */
+  height: 80px;
+}
+
+.tech-name {
+  font-size: 1.9rem;          /* Larger title */
+  color: #fff;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.two-columns {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1 1 45%;
+}
+
+.benefit-title, .drawback-title {
+  font-size: 1rem;
+  color: #0ff;
+  margin-bottom: 0.3rem;
+}
+
+.benefits, .drawbacks {
+  list-style: none;
+  padding-left: 1rem;
+  color: #ccc;
+}
+
+.benefits li::before {
+  content: "✔ ";
+  color: #0f0;
+}
+
+.drawbacks li::before {
+  content: "✘ ";
+  color: #f55;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Only 2 cards per row */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,110 @@
+/* Section Base Styling */
+.webdev-section {
+  background: radial-gradient(circle at center right, #1c001f 0%, #000000 80%);
+  color: #ffffff;
+  padding: 120px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Flex Container */
+.webdev-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Text Section */
+.webdev-text {
+  width: 70%;
+  padding-right: 30px;
+}
+
+.webdev-text h2 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.webdev-text p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+/* Button Styling */
+.webdev-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #a000f5, #d57bff);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 0 20px rgba(162, 0, 255, 0.4);
+}
+
+.webdev-btn:hover {
+  background: linear-gradient(90deg, #d57bff, #a000f5);
+  transform: scale(1.05);
+}
+
+/* Right Video Visual */
+.webdev-visual {
+  width: 30%;
+  text-align: center;
+}
+
+.webdev-visual video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 0 60px rgba(194, 113, 237, 0.6);
+  animation: floatPulse 6s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes floatPulse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .webdev-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webdev-text,
+  .webdev-visual {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .webdev-text {
+    margin-bottom: 40px;
+  }
+
+  .webdev-text h2 {
+    font-size: 36px;
+  }
+
+  .webdev-text p {
+    font-size: 16px;
+  }
+
+  .webdev-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
